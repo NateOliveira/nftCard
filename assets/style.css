@@ -1,35 +1,121 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
     width: 100%;
-    background: hsl(217, 54%, 11%);
-    font-family: Outfit;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
 }
 
-main {
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    width: 275px;
+    padding: 1.5rem;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.imagem div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.imagem div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.descrçao {
+    margin: 0.6rem 0 1rem 0;
+    color: hsl(215, 51%, 70%);
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.dias-preço {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.preço {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 2rem 2rem;
-    background-color: hsl(215, 32%, 27%);
-    border-radius: 2rem;
-    width: 25%;
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.dice {
+.preço img {
+    margin-right: 5px;
+}
+
+.dias {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
 }
 
-.dice img {
-    width: 50%;
-    height: 50%;
-    border-radius: 2rem;
-    margin: 1rem;
-    padding: 1rem;
+.dias img {
+    margin-right: 5px;
+}
+
+.criador {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 1rem;
+    width: 30px;
+}
+
+span {
+    color: white;
+    margin-left: 5px;
+}
+
+.mainImg, h3, span {
+    cursor: pointer;
+}
+
+h3:hover, span:hover {
+    color: hsl(178, 100%, 50%);
 }
